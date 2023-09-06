@@ -17,19 +17,19 @@ const massConversion = document.getElementById("mass-conversion");
 const volumeConversion = document.getElementById("volume-conversion");
 
 converBtn.addEventListener("click", function () {
-  lengthConversion.textContent = `${inputEl.value} meters = ${(
+  lengthConversion.innerHTML = `${inputEl.value} meters = ${(
     inputEl.value * meterToFeet
   ).toFixed(3)}  feet | ${inputEl.value} feet = ${(
     inputEl.value / meterToFeet
   ).toFixed(3)} meters`;
 
-  volumeConversion.textContent = `${inputEl.value} liters = ${(
+  volumeConversion.innerHTML = `${inputEl.value} liters = ${(
     inputEl.value * literToGallon
   ).toFixed(3)}  gallons | ${inputEl.value} gallons = ${(
     inputEl.value / literToGallon
   ).toFixed(3)} liters`;
 
-  massConversion.textContent = `${inputEl.value} kilos = ${(
+  massConversion.innerHTML = `${inputEl.value} kilos = ${(
     inputEl.value * kgToPound
   ).toFixed(3)}  pounds | ${inputEl.value} pounds = ${(
     inputEl.value / kgToPound
